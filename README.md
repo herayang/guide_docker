@@ -32,45 +32,128 @@
 
 ### 1.2 What is a Docker Image?
 
+-
+-
+-
+
 ### 1.3 What is a Docker Container?
+
+-
+-
+-
 
 ## 2. Creating the Docker File - Spencer Williams
 
+-
+-
+-
+
 ### 2.1
+
+-
+-
+-
 
 ### 2.2
 
+-
+-
+-
+
 ### 2.3
+
+-
+-
+-
 
 ## 3. Docker Build - Hera Yang
 
 ### 3.1
 
+-
+-
+-
+
 ### 3.2
+
+-
+-
+-
 
 ### 3.3
 
+-
+-
+-
+
 ## 4. Running the Container - Ben Hinchman
+
+-
+-
+-
 
 ### 4.1
 
+-
+-
+-
+
 ### 4.2
+
+-
+-
+-
 
 ### 4.3
 
+-
+-
+-
+
 ## 5. Pushing to the Docker Hub - Mireya Vera Loo
+
+-
+-
+-
 
 ### 5.1
 
+-
+-
+-
+
 ### 5.2
+
+-
+-
+-
 
 ### 5.3
 
+-
+-
+-
+
 ## 6. Docker Application - Caden Franc
+
+-
+-
+-
 
 ### 6.1
 
+-
+-
+-
+
 ### 6.2
+
+-
+-
+-
 
 ### 6.3
 
+-
+-
+-
