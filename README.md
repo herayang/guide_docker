@@ -44,10 +44,6 @@
 
 ## 2. Creating the Docker File - Spencer Williams
 
--
--
--
-
 ### 2.1
 
 -
@@ -88,10 +84,6 @@
 
 ## 4. Running the Container - Ben Hinchman
 
--
--
--
-
 ### 4.1
 
 -
@@ -112,10 +104,6 @@
 
 ## 5. Pushing to the Docker Hub - Mireya Vera Loo
 
--
--
--
-
 ### 5.1
 
 -
@@ -135,10 +123,6 @@
 -
 
 ## 6. Docker Application - Caden Franc
-
--
--
--
 
 ### 6.1
 
