@@ -169,7 +169,7 @@ CMD ["main.py"] # Run file from the command line
 
 ## Additional Resources to Explore
 
-- [Docker Volumnes](https://docs.docker.com/storage/volumes/)
+- [Docker Volumes](https://docs.docker.com/storage/volumes/)
 - [Docker Networks](https://docs.docker.com/network/)
 - [Container Registries](https://docs.docker.com/registry/)
 - [Docker Compose](https://docs.docker.com/compose/) 
