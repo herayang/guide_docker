@@ -25,7 +25,7 @@
 
 ### 1.1 Docker Setup
 
-- "Insert links to setup and troubleshoot Docker here"
+- 
 -
 -
 -
@@ -44,23 +44,28 @@
 
 ## 2. Creating the Docker File - Spencer Williams
 
-### 2.1
+### 2.1 What is a docker file?
 
--
--
--
+- A text file with instructions for creating your docker image, which is a file with executable code. It is similar to a makefile for other programming languages and  their compliers but is used for the file to work with docker. 
+- This in turn provides a form of automation for creating the docker image when creating for the first time and afterwards.
+- A Dockerfile is a text document that contains all the commands a user could call on the command line to assemble an image.
 
-### 2.2
+### 2.2 Creating a docker file
 
--
--
--
+- Via VS code extension, ... F1 while using the docker extension and selecting the type of file we want and its entry point (the main file it'll execute)
+- Via command line, ... touch DockerFile and vim Dockerfile to then edit it
+- docker list to view created docker files
 
-### 2.3
+### 2.3 Editing the docker file
 
--
--
--
+FROM python:3.7 #
+WORKDIR /app # Path to the image file
+COPY requirements.txt ./requirements.txt # Copying our requirements.txt
+RUN pip install -r requirements.txt # Runing it to install the necessary dependencies for your application to run
+EXPOSE 8501 # The EXPOSE instruction tells Docker to get all its information required during the runtime from a specified Port. These ports can be either TCP or UDP, but it's TCP by default.
+COPY . /app # Copy everything under the directory
+ENTRYPOINT ["streamlit", "run"] # Setting the entry point
+CMD ["main.py"] # Run file from the command line
 
 ## 3. Docker Build - Hera Yang
 
@@ -82,7 +87,7 @@
 -
 -
 
-## 4. Running the Container - Ben Hinchman
+## 4. Running the Container - Mireya Vera Loo
 
 ### 4.1
 
@@ -102,7 +107,7 @@
 -
 -
 
-## 5. Pushing to the Docker Hub - Mireya Vera Loo
+## 5. Pushing to the Docker Hub - Ben Hinchman 
 
 ### 5.1
 
