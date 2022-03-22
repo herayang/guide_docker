@@ -1,25 +1,14 @@
-# Using Docker to deploy a streamlit application
+## I. Installation
 
-- [Docker Containers and Azure](https://github.com/BYUI451/cloud_guide/blob/main/azure.md) 
-- [Using Spark for exploratory data analysis](https://github.com/BYUI451/spark_guide)
-- [Docker](https://github.com/BYUI451/docker_guide)
-- [Rocker Guide](https://github.com/BYUI451/rocker_guide)
+### Tools
+- Docker: https://docs.docker.com/get-docker/
+- VSCode: https://code.visualstudio.com/download
+- Docker Extension: https://code.visualstudio.com/docs/containers/overview
 
-1. Use this template repo to create your training repo as _guide\_[topic]_
-2. Make sure your training repo is set as a template repo.
-3. Delete the text from `README.md` and replace it with your training material.
-4. Consider using presentation slides in your training (Read (remark.md)[remark.md] for more help).
-    - Leverage `index.html`
-    - Use GitHub Pages: `Settings > Pages`. Set source `main` and `\(root)`.
-5. Make sure that a user can use your template repo to see example scripts and have a standardized environment.
-6. Provide any additional files needed in the subfolders of the repository.
-
-## Goals
-
-- Leave the participants with working examples.
-- Have documented instructions and references for further learning.
-- Cite experts based on your research.
-- Make sure your entire team contributes.
+### Troubleshooting
+- https://github.com/docker/docker.github.io/issues
+- https://github.com/microsoft/vscode/issues
+- Troubleshooting tips for Docker: https://www.youtube.com/watch?v=E5ezkYSiNiE
 
 ## 1. Introduction - Josh Phillips
 
@@ -52,8 +41,8 @@
 
 ### 2.2 Creating a docker file
 
-- Via VS code extension, ... F1 while using the docker extension and selecting the type of file we want and its entry point (the main file it'll execute)
-- Via command line, ... touch DockerFile and vim Dockerfile to then edit it
+- Via VS code extension, ... F1 while using the docker extension and selecting the type of file we want and its entry point (the main file it will execute)
+- Via command line, touch DockerFile and vim Dockerfile to then edit it 
 - docker list to view created docker files
 
 ### 2.3 Editing the docker file
@@ -146,3 +135,18 @@ CMD ["main.py"] # Run file from the command line
 -
 -
 -
+
+## Additional Resources
+
+- Docker Volumnes: https://docs.docker.com/storage/volumes/
+- Docker Networks: https://docs.docker.com/network/
+- Container Registries: https://docs.docker.com/registry/
+- Docker Compose: https://docs.docker.com/compose/: 
+- Docker vs. Kubernetes: https://semaphoreci.com/blog/kubernetes-vs-docker
+
+## Other Resources
+- [Docker Containers and Azure](https://github.com/BYUI451/cloud_guide/blob/main/azure.md) 
+- [Using Spark for exploratory data analysis](https://github.com/BYUI451/spark_guide)
+- [Docker](https://github.com/BYUI451/docker_guide)
+- [Rocker Guide](https://github.com/BYUI451/rocker_guide)
+
