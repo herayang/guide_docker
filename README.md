@@ -56,7 +56,7 @@
 
 ### 2.3 Editing the docker file
 
-- FROM python:3.7 #
+- FROM python:3.7 # Selecting which python version to use (The FROM instruction initializes a new build stage and sets the Base Image for subsequent instructions)
 - WORKDIR /app # Path to the image file
 - COPY requirements.txt ./requirements.txt # Copying our requirements.txt
 - RUN pip install -r requirements.txt # Runing it to install the necessary dependencies for your application to run
