@@ -56,21 +56,21 @@
 
 ### 2.3 Editing the docker file
 
-- # Selecting which python version to use (The FROM instruction initializes a new build stage and sets the Base Image for subsequent instructions)
+- *Selecting which python version to use (The FROM instruction initializes a new build stage and sets the Base Image for subsequent instructions)*
 - FROM python:3.7
-- # Path to the image file 
+- *Path to the image file* 
 - WORKDIR /app 
-- # Copying our requirements.txt
+- *Copying our requirements.txt*
 - COPY requirements.txt ./requirements.txt 
-- # To install the necessary dependencies for your application to run
+- *To install the necessary dependencies for your application to run*
 - RUN pip install -r requirements.txt 
-- # The EXPOSE instruction tells Docker to get all its information required during the runtime from a specified Port. These ports can be either TCP or UDP, but it's TCP by default.
+- *The EXPOSE instruction tells Docker to get all its information required during the runtime from a specified Port. These ports can be either TCP or UDP, but it's TCP by default.*
 - EXPOSE 8501 
-- # Copy everything under the directory
+- *Copy everything under the directory*
 - COPY . /app 
-- # Setting the entry point or where your application will start
+- *Setting the entry point or where your application will start*
 - ENTRYPOINT ["streamlit", "run"] 
-- # CMD allows you to input execute command lines when using your docker file (i.e. run main.py)
+- *CMD allows you to input execute command lines when using your docker file (i.e. run main.py)*
 - CMD ["main.py"] 
 
 ## 3. Docker Build - Hera Yang
