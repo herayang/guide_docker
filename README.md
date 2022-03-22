@@ -44,6 +44,9 @@
 
 ### 2.2 Creating a docker file
 
+![Creating file](https://user-images.githubusercontent.com/59627216/159536991-19afc878-0b4e-43cd-9df4-f25f1b17aaf1.gif)
+
+
 - Via VS code extension, ... F1 while using the docker extension and selecting the type of file we want and its entry point (the main file it will execute)
 - Via command line, touch DockerFile and vim Dockerfile to then edit it 
 - docker list to view created docker files
