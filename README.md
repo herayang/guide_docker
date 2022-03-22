@@ -35,8 +35,8 @@
 
 ### 2.1 What is a docker file?
 
-![Docker File](![0_CP98BIIBgMG2K3u5](https://user-images.githubusercontent.com/59627216/159536410-c818b30b-fffa-4f63-93ce-04b22fdc4058.png)
-)
+![Docker File](https://user-images.githubusercontent.com/59627216/159536551-599e8e2a-f4e5-4a3d-8d49-42ede1d9a365.png)
+
 
 - A text file with instructions for creating your docker image, which is a file with executable code. It is similar to a makefile for other programming languages and  their compliers but is used for the file to work with docker. 
 - This in turn provides a form of automation for creating the docker image when creating for the first time and afterwards.
