@@ -1,5 +1,8 @@
 ## I. Installation
 
+![Docker + VSCode](https://user-images.githubusercontent.com/59627216/159537585-d0b008e7-e9c6-4faf-9700-26fd5642f491.png)
+
+
 ### Tools
 - Docker: https://docs.docker.com/get-docker/
 - VSCode: https://code.visualstudio.com/download
@@ -142,17 +145,35 @@ CMD ["main.py"] # Run file from the command line
 -
 -
 
-## Additional Resources
+## Questions and Answers
 
-- Docker Volumnes: https://docs.docker.com/storage/volumes/
-- Docker Networks: https://docs.docker.com/network/
-- Container Registries: https://docs.docker.com/registry/
-- Docker Compose: https://docs.docker.com/compose/: 
-- Docker vs. Kubernetes: https://semaphoreci.com/blog/kubernetes-vs-docker
+- [Interview Questions for jobs that use Docker?](https://hackr.io/blog/docker-interview-questions)
+- [What are the pros and cons of Docker?](https://blog.iron.io/docker-containers-the-pros-and-cons-of-docker/)
+- [How to debug when using Docker in VSCode?](https://code.visualstudio.com/docs/containers/debug-common)
+- [How to optimize Docker?](https://circleci.com/blog/tips-for-optimizing-docker-builds/)
+- [How is Docker secure?](https://docs.docker.com/engine/security/#:~:text=Conclusions,or%20another%20appropriate%20hardening%20system.)
 
-## Other Resources
+## Videos about and on using Docker
+
+- [What is Docker in 5 mins](https://www.youtube.com/watch?v=_dfLOzuIg2o)
+- [How to create and build Dockerfile](https://www.youtube.com/watch?v=LQjaJINkQXY)
+- [Run Your App in a Container](https://www.youtube.com/watch?v=jtBVppyfDbE)
+
+## Resources
+- [Deploying Streamlit via Docker](https://www.section.io/engineering-education/how-to-deploy-streamlit-app-with-docker/)
+- [Docker Containers](https://www.docker.com/resources/what-container/)
 - [Docker Containers and Azure](https://github.com/BYUI451/cloud_guide/blob/main/azure.md) 
 - [Using Spark for exploratory data analysis](https://github.com/BYUI451/spark_guide)
 - [Docker](https://github.com/BYUI451/docker_guide)
 - [Rocker Guide](https://github.com/BYUI451/rocker_guide)
+
+## Additional Resources to Explore
+
+- [Docker Volumnes](https://docs.docker.com/storage/volumes/)
+- [Docker Networks](https://docs.docker.com/network/)
+- [Container Registries](https://docs.docker.com/registry/)
+- [Docker Compose](https://docs.docker.com/compose/) 
+- [Docker vs. Kubernetes](https://semaphoreci.com/blog/kubernetes-vs-docker)
+
+
 
