@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>My Awesome Presentation</title>
+    <title>Deploying an Application Using Docker</title>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
     <style type="text/css">
       @import url(https://fonts.googleapis.com/css?family=Yanone+Kaffeesatz);
@@ -63,10 +63,12 @@ Notes for the _first_ slide!
 
 # Agenda
 
-1. Introduction
-2. Survey of tools and needs
-3. Looking for automation
-4. Creating an accessible and secure workflow
+1. Introduction - Josh Phillips
+2. Docker Files - Spencer Williams
+3. Docker Build - Hera Yang
+4. Docker Container - Mireya Vera Loo
+5. Docker Hub - Ben Hinchman
+6. Docker Application - Caden Franc
 
 ---
 
@@ -77,14 +79,47 @@ Notes for the _first_ slide!
 
 ---
 
-# A great slide
+# Docker Files
+
+### 2.1 What is a docker file?
+
+- A text file with instructions for creating your docker image, which is a file with executable code. It is similar to a makefile for other programming languages and  their compliers but is used for the file to work with docker. 
+- This in turn provides a form of automation for creating the docker image when creating for the first time and afterwards.
+- A Dockerfile is a text document that contains all the commands a user could call on the command line to assemble an image.
+
+### 2.2 Creating a docker file
+
+- Via VS code extension, ... F1 while using the docker extension and selecting the type of file we want and its entry point (the main file it will execute)
+- Via command line, touch DockerFile and vim Dockerfile to then edit it 
+- docker list to view created docker files
+
+### 2.3 Editing the docker file
+
+FROM python:3.7 #
+WORKDIR /app # Path to the image file
+COPY requirements.txt ./requirements.txt # Copying our requirements.txt
+RUN pip install -r requirements.txt # Runing it to install the necessary dependencies for your application to run
+EXPOSE 8501 # The EXPOSE instruction tells Docker to get all its information required during the runtime from a specified Port. These ports can be either TCP or UDP, but it's TCP by default.
+COPY . /app # Copy everything under the directory
+ENTRYPOINT ["streamlit", "run"] # Setting the entry point
+CMD ["main.py"] # Run file from the command line
+
+# Docker Build
 
 ---
 
-# Another great slide
+# Docker Container
 
----
+--- 
 
+# Docker Hub
+
+--- 
+      
+# Docker Application
+
+--- 
+      
 # Creating an accessible and secure workflow
 
     </textarea>
