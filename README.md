@@ -11,7 +11,7 @@
 ### Troubleshooting
 - https://github.com/docker/docker.github.io/issues
 - https://github.com/microsoft/vscode/issues
-- Troubleshooting tips for Docker: https://www.youtube.com/watch?v=E5ezkYSiNiE
+- https://www.youtube.com/watch?v=E5ezkYSiNiE
 
 ## 1. Introduction - Josh Phillips
 
