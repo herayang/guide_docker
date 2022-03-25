@@ -17,22 +17,22 @@
 
 ### 1.1 Docker Setup
 
-- 
--
--
--
+- Download From Website: https://www.docker.com/get-started/
+- Select OS Desired (Windows/Mac/Linux)
+- Run Installation Process
+- Optional: If using VSC (Visual Studio Code), download the "Docker" Extension to interact with the application.
 
 ### 1.2 What is a Docker Image?
 
--
--
--
+- A lightweight, executable package that contains everything necessary to run an application.
+- Read-Only Template that has instructions for the creation of containers runnable on Docker.
+- Used to conveniently pack up applications and preconfigure server environments privately or publicly.
 
 ### 1.3 What is a Docker Container?
 
--
--
--
+- A standard unit of software that stores code and dependencies to run efficiently from one environment to another.
+- Portable, Secure and Fast.
+- Highest Security in the Industry.
 
 ## 2. Creating the Docker File - Spencer Williams
 
@@ -118,10 +118,10 @@ Remove images by using the command below:
 
 
 ### 3.3 Further resources for understanding Images/Layers and its optimization.  
-
 - [Optimization with Multi-stage Builds](https://docs.docker.com/develop/develop-images/multistage-build/)
 - [Docker Layers Explained](https://dzone.com/articles/docker-layers-explained)
 - [Docker Development Best Practice](https://docs.docker.com/develop/dev-best-practices/)
+
 ## 4. Running the Container - Mireya Vera Loo
 
 ### 4.1
