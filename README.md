@@ -75,23 +75,53 @@
 
 ## 3. Docker Build - Hera Yang
 
-### 3.1
+### 3.1 Building an Image 
 
--
--
--
+If Dockerfile is like a recipe, docker image is like a final product (eg. cake) of said recipe. Therefore, building the Dockerimage is the action of baking a cake(Dockerimage) following the given instruction(DockerFile.) Docker builds the image using the Dockerfile as the instruction and follows it step by step. Each instructions will create **a layer or an intermediate layer** that makes up the part of Dockerimage (the result of building Dockerfile) Keywords like `RUN`, `COPY`, or `ADD` will create a layer, while all other instructions will create an intermediate layer-- a layer that does not impact the size of the image created.
 
-### 3.2
+For our example Dockerfile, 
 
--
--
--
+#### Caching
+Each layers (including intermediate layers) are cached with a unique ID and can be shared and reused while building other images. For example, you have a docker file called A and another dockerfile called B, created based on Dockerfile A using `COPY`.  
 
-### 3.3
+![shared_layers](https://drive.google.com/uc?id=1D0IV41TKpDrASEkPVB43LcXuEtXlvlAd)
 
--
--
--
+If we've already built file A and created an Dockerimage, the layers 1 and 2 is created, cached and ready to be reused. Therefore, when building Image B from Dockerfile B, Docker "skips" building the first two layer of Image B since it can reuse them. Therefore, these layers approaching for building an image helps Docker to be more efficient by eliminating any unnecessary, repetitive building. 
+
+
+#### Order Matters
+All layers are also dependant of the layers right below it since it is built on top of each other (kind of like a stack). This means that whenever a layer is modified, the changed layer and all the layers above it will have to be rebuilt. Therefore, keeping in mind the **heirarchy of the layers** could potentially impact the efficiency of the built image. 
+
+![order](https://drive.google.com/uc?id=1UIQU-7v4B_7B7mAOu3Pv1HQ1a8Rdz8n7)
+
+### 3.2 Command line build
+
+You can build the image using the docker file created with the following command: 
+
+```console
+ $ docker build [OPTIONS] PATH | URL | -
+```
+- options: optional actions. 
+  * `--tag`or `-t`:  The most common option you will see with build. Any images without a tag will, by default, have "latest" for its tag value. (*Always tagging your image is the best practice. *)
+  *  `--cache-from`: sets image as part of build cache. Basically allowing the usual cache proceudre to work on different machines.
+- PATH or URL : 
+  * simply use `.` to build it in the current directory. 
+  * URL refers to  Git repositories, pre-packaged tarball contexts and plain text files. Refer to documentation [here](https://docs.docker.com/engine/reference/commandline/build/)
+
+#### 3.2.1 Commandline remove: 
+
+Remove images by using the command below: 
+```console
+ $ docker rmi [OPTIONS] IMAGE [IMAGE...]
+```
+* note:  You cannot remove an image of a running container unless you use the `-f` option to force remove an image. Refer to the documentation [here](https://docs.docker.com/engine/reference/commandline/rmi/)
+
+
+### 3.3 Further resources for understanding Images/Layers and its optimization.  
+
+- [Optimization with Multi-stage Builds](https://docs.docker.com/develop/develop-images/multistage-build/)
+- [Docker Layers Explained](https://dzone.com/articles/docker-layers-explained)
+- [Docker Development Best Practice](https://docs.docker.com/develop/dev-best-practices/)
 
 ## 4. Running the Container - Mireya Vera Loo
 
