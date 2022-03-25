@@ -81,19 +81,18 @@ If Dockerfile is like a recipe, docker image is like a final product (eg. cake) 
 
 For our example Dockerfile, 
 
-**Caching**
+#### Caching
 Each layers (including intermediate layers) are cached with a unique ID and can be shared and reused while building other images. For example, you have a docker file called A and another dockerfile called B, created based on Dockerfile A using `COPY`.  
 
-![Docker File](https://user-images.githubusercontent.com/59627216/159536551-599e8e2a-f4e5-4a3d-8d49-42ede1d9a365.png)
+![shared_layers](https://drive.google.com/file/d/1D0IV41TKpDrASEkPVB43LcXuEtXlvlAd/view?usp=sharing)
 
 If we've already built file A and created an Dockerimage, the layers 1 and 2 is created, cached and ready to be reused. Therefore, when building Image B from Dockerfile B, Docker "skips" building the first two layer of Image B since it can reuse them. Therefore, these layers approaching for building an image helps Docker to be more efficient by eliminating any unnecessary, repetitive building. 
 
 
-
-**Order Matters**
+#### Order Matters
 All layers are also dependant of the layers right below it since it is built on top of each other (kind of like a stack). This means that whenever a layer is modified, the changed layer and all the layers above it will have to be rebuilt. Therefore, keeping in mind the **heirarchy of the layers** could potentially impact the efficiency of the built image. 
 
-![Docker File](https://user-images.githubusercontent.com/59627216/159536551-599e8e2a-f4e5-4a3d-8d49-42ede1d9a365.png)
+![order](https://drive.google.com/file/d/1UIQU-7v4B_7B7mAOu3Pv1HQ1a8Rdz8n7/view?usp=sharing)
 
 ### 3.2 Command line build
 
