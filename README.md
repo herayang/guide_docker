@@ -132,25 +132,16 @@
 - docker push [DOCKERUSERNAME]/[IMAGE] will //// docker push tujianis/centos
 - docker pull [IMAGE] //// docker pull centos
 
-## 6. Docker Application - Caden Franc
+## 6. Deployment to AWS - Caden Franc
 
-### 6.1
+- Learn how to create a free acount at https://aws.amazon.com/premiumsupport/knowledge-center/create-and-activate-aws-account/
+- Login to your account and search the AWS Console for Elastic Beanstalk. This is a service provided by AWS for managing cloud applications.
+- Create a new application and choose Docker as the platform.
+- Under the "Source Code Origin" section, upload the [Dockerrun.aws.json](https://github.com/kstathou/vector_engine/blob/master/Dockerrun.aws.json) file. Be sure and change the image name to your own username and imagename.
+- Choose the t2.micro instance if you are using the free tier. You will be charged for other options.
 
--
--
--
 
-### 6.2
 
--
--
--
-
-### 6.3
-
--
--
--
 
 ## Questions and Answers
 
