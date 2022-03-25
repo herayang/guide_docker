@@ -120,11 +120,11 @@
 - for the [OPTIONS], you have -a, -q, and --disable-content-trust
 - -a pushes all tagged images up to either your local repo or your cloud repo.
 - NAME is the name of your image. [:TAG] is whatever tag you want to give it, like a version number.
-- 
+
 ### 5.2 docker push
 - docker push MYIMAGE:VERSION // docker push myimage:1.0
 - If you push myimage:1.0, make a change, and then make a new one, myimage:1.1, you will be able to grab both versions, and run the differences in them. Remember, each push is a unique, read-only image. Keeping track of Version History is helpful, much like Github Commits
-- 
+
 ### 5.3 Docker Hub
 - docker login --username=yourhubusername --email=youremail@company.com
 - After that, you'd be prompted to login. It'll save your password through the command line.
